@@ -1,0 +1,29 @@
+<?php $products = $block->getProducts(); ?>
+
+<h1>Synced Products</h1>
+
+<table class="admin__table-secondary">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Product Name</th>
+        <th>SKU</th>
+        <th>Price</th>
+        <th>Status</th>
+        <th>Created At</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <?php foreach ($products as $product): ?>
+        <tr>
+            <td><?= $product->getId(); ?></td>
+            <td><?= $product->getProductName(); ?></td>
+            <td><?= $product->getSku(); ?></td>
+            <td><?= $product->getPrice(); ?></td>
+            <td><?= $product->getStatus() ? 'Active' : 'Inactive'; ?></td>
+            <td><?= $product->getCreatedAt(); ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

@@ -8,7 +8,7 @@ VENDOR_THEME=$(bin/n98-magerun2 db:query "$THEME_PATH" | sed -n 2p | cut -d$'\r'
 THEME=$(echo "$VENDOR_THEME" | cut -d'/' -f2)
 LOCALE_CODE=$(bin/magento config:show general/locale/code | cut -d$'\r' -f1 | sed 's/ *$//g')
 
-# Generate local-theme.js for custom theme
+# Generate local-theme.js for Custom theme
 read -r -d '' GEN_THEME_JS << EOM
 var fs = require('fs');
 var util = require('util');
@@ -47,7 +47,7 @@ if [ "$(uname -m)" == "arm64" ]; then
       && mv package.json src/package.json
 fi
 
-# Enable these custom files on compose.dev.yaml so custom updates are persisted
+# Enable these Custom files on compose.dev.yaml so Custom updates are persisted
 sed -e 's/grunt-config.json.sample/grunt-config.json/' compose.dev.yaml > compose.dev.yaml.updated \
  && mv compose.dev.yaml.updated compose.dev.yaml
 sed -e 's/Gruntfile.js.sample/Gruntfile.js/' compose.dev.yaml > compose.dev.yaml.updated \

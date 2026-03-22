@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+
+    <menu>
+
+        <add id="Custom_InventoryAlert::add_alert"
+             title="Add Alert"
+             module="Custom_InventoryAlert"
+             sortOrder="20"
+             parent="Custom_InventoryAlert::inventory_alert"
+             action="inventoryalert/index/create"
+             resource="Magento_Backend::content"/>
+
+
+        <add id="Custom_InventoryAlert::inventory_alert"
+             title="Inventory Alerts"
+             module="Custom_InventoryAlert"
+             sortOrder="110"
+             resource="Magento_Backend::content"/>
+
+        <add id="Custom_InventoryAlert::alerts"
+             title="Alerts"
+             module="Custom_InventoryAlert"
+             sortOrder="10"
+             parent="Custom_InventoryAlert::inventory_alert"
+             action="inventoryalert/index/index"
+             resource="Magento_Backend::content"/>
+    </menu>
+
+</config>

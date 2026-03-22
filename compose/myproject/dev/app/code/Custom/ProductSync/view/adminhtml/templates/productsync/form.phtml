@@ -1,0 +1,38 @@
+<form method="post" action="<?= $block->getUrl('productsync/index/save') ?>">
+    <?= $block->getBlockHtml('formkey') ?>
+
+    <div class="admin__fieldset">
+        <div class="admin__field">
+            <label class="admin__field-label">Product Name</label>
+            <div class="admin__field-control">
+                <input class="admin__control-text" type="text" name="product_name" required>
+            </div>
+        </div>
+
+        <div class="admin__field">
+            <label class="admin__field-label">SKU</label>
+            <div class="admin__field-control">
+                <input class="admin__control-text" type="text" name="sku" required>
+            </div>
+        </div>
+
+        <div class="admin__field">
+            <label class="admin__field-label">Price</label>
+            <div class="admin__field-control">
+                <input class="admin__control-text" type="number" step="0.01" name="price" required>
+            </div>
+        </div>
+
+        <div class="admin__field">
+            <label class="admin__field-label">Status</label>
+            <div class="admin__field-control">
+                <select class="admin__control-select" name="status">
+                    <option value="1">Active</option>
+                    <option value="0">Inactive</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="action-primary">Save Synced Product</button>
+    </div>
+</form>

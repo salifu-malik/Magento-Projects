@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+
+    <menu>
+
+        <add id="Custom_ProductSync::add_synced_product"
+             title="Add Synced Product"
+             module="Custom_ProductSync"
+             sortOrder="20"
+             parent="Custom_ProductSync::product_sync"
+             action="productsync/index/create"
+             resource="Magento_Backend::content"/>
+
+        <add id="Custom_ProductSync::import_api_products"
+             title="Import API Products"
+             module="Custom_ProductSync"
+             sortOrder="30"
+             parent="Custom_ProductSync::product_sync"
+             action="productsync/index/import"
+             resource="Magento_Backend::content"/>
+
+
+        <add id="Custom_ProductSync::product_sync"
+             title="Product Sync"
+             module="Custom_ProductSync"
+             sortOrder="120"
+             resource="Magento_Backend::content"/>
+
+        <add id="Custom_ProductSync::synced_products"
+             title="Synced Products"
+             module="Custom_ProductSync"
+             sortOrder="10"
+             parent="Custom_ProductSync::product_sync"
+             action="productsync/index/index"
+             resource="Magento_Backend::content"/>
+    </menu>
+
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="custom_inventory_alert" resource="default" engine="innodb" comment="Custom Inventory Alert Table">
+        <column xsi:type="int" name="alert_id" unsigned="true" nullable="false" identity="true" comment="Alert ID"/>
+        <column xsi:type="varchar" name="product_sku" nullable="false" length="255" comment="Product SKU"/>
+        <column xsi:type="int" name="threshold_qty" nullable="false" default="5" comment="Threshold Quantity"/>
+        <column xsi:type="varchar" name="notification_email" nullable="false" length="255" comment="Notification Email"/>
+        <column xsi:type="smallint" name="status" nullable="false" default="1" comment="Status"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="alert_id"/>
+        </constraint>
+    </table>
+</schema>

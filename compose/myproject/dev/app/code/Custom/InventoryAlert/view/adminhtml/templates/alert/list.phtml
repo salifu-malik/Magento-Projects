@@ -1,0 +1,40 @@
+<?php $alerts = $block->getAlerts(); ?>
+
+<h1>Inventory Alerts</h1>
+
+<table class="admin__table-secondary">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Product SKU</th>
+        <th>Threshold Qty</th>
+        <th>Notification Email</th>
+        <th>Status</th>
+        <th>Created At</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <?php foreach ($alerts as $alert): ?>
+        <tr>
+            <td><?= $alert->getId(); ?></td>
+            <td><?= $alert->getProductSku(); ?></td>
+            <td><?= $alert->getThresholdQty(); ?></td>
+            <td><?= $alert->getNotificationEmail(); ?></td>
+            <td><?= $alert->getStatus() ? 'Active' : 'Inactive'; ?></td>
+            <td><?= $alert->getCreatedAt(); ?></td>
+            <td>
+                <a href="<?= $block->getUrl('inventoryalert/index/status', ['id' => $alert->getId(), 'status' => 1]) ?>">Activate</a>
+                |
+                <a href="<?= $block->getUrl('inventoryalert/index/status', ['id' => $alert->getId(), 'status' => 0]) ?>">Deactivate</a>
+                |
+                <a href="<?= $block->getUrl('inventoryalert/index/delete', ['id' => $alert->getId()]) ?>"
+                   onclick="return confirm('Are you sure you want to delete this alert?');">
+                    Delete
+                </a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

@@ -5,28 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3142100a-48ef-4616-b8a8-7df691500292" name="Changes" comment="Created custom admin route&quot; Marketpalce&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/docker-magento.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Marketplace/VendorManager/etc/adminhtml/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Marketplace/VendorManager/etc/adminhtml/routes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Marketplace/VendorManager/etc/db_schema.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Marketplace/VendorManager/etc/module.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Marketplace/VendorManager/registration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/etc/NonComposerComponentRegistration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/etc/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/etc/db_schema.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/etc/di.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/etc/env.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/etc/registration_globlist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/etc/vendor_path.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose/src" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Block/Adminhtml/Alert/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Block/Adminhtml/Alert/Listing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Controller/Adminhtml/Index/Create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Controller/Adminhtml/Index/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Controller/Adminhtml/Index/Index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Controller/Adminhtml/Index/Save.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Controller/Adminhtml/Index/Status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Model/Alert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Model/ResourceModel/Alert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/Model/ResourceModel/Alert/Collection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/etc/adminhtml/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/etc/adminhtml/routes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/etc/db_schema.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/etc/module.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/registration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/view/adminhtml/layout/inventoryalert_index_create.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/view/adminhtml/layout/inventoryalert_index_index.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/view/adminhtml/templates/alert/form.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose/myproject/dev/app/code/Custom/InventoryAlert/view/adminhtml/templates/alert/list.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose/bin/setup-grunt" beforeDir="false" afterPath="$PROJECT_DIR$/compose/bin/setup-grunt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +91,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/compose/src/app/code/Custom/InventoryAlert/view/adminhtml/layout" />
+      <recent name="$PROJECT_DIR$/compose/src/app/code/Custom/InventoryAlert" />
+      <recent name="$PROJECT_DIR$/compose/src/app/code" />
       <recent name="$PROJECT_DIR$/compose/src/app/code/Marketplace/VendorManager/etc/adminhtml" />
       <recent name="$PROJECT_DIR$/compose/src/app/code/Marketplace/VendorManager/Controller" />
-      <recent name="$PROJECT_DIR$/compose/src/app/code/Marketplace/VendorManager/etc" />
-      <recent name="$PROJECT_DIR$/compose/src/app/code/Marketplace/VendorManager/etc/Controller" />
-      <recent name="$PROJECT_DIR$/compose/src/app/code/Marketplace/VendorManager/etc/adminhtml/Index" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -115,7 +115,7 @@
       <updated>1778926241884</updated>
       <workItem from="1778926243397" duration="17184000" />
       <workItem from="1779173234687" duration="484000" />
-      <workItem from="1779173799373" duration="12010000" />
+      <workItem from="1779173799373" duration="25527000" />
     </task>
     <servers />
   </component>
