@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+
+    <menu>
+        <add id="Custom_AnalyticsDashboard::analytics_dashboard"
+             title="Analytics Dashboard"
+             module="Custom_AnalyticsDashboard"
+             sortOrder="130"
+             resource="Magento_Backend::content"/>
+
+        <add id="Custom_AnalyticsDashboard::dashboard"
+             title="Dashboard"
+             module="Custom_AnalyticsDashboard"
+             sortOrder="10"
+             parent="Custom_AnalyticsDashboard::analytics_dashboard"
+             action="analyticsdashboard/index/index"
+             resource="Magento_Backend::content"/>
+    </menu>
+
+</config>
