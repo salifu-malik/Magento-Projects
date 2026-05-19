@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="marketplace_vendor" resource="default" engine="innodb" comment="Marketplace Vendor Table">
+        <column xsi:type="int" name="vendor_id" unsigned="true" nullable="false" identity="true" comment="Vendor ID"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Vendor Name"/>
+        <column xsi:type="varchar" name="email" nullable="false" length="255" comment="Vendor Email"/>
+        <column xsi:type="varchar" name="store_name" nullable="false" length="255" comment="Store Name"/>
+        <column xsi:type="smallint" name="status" nullable="false" default="1" comment="Status"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" nullable="true" on_update="true" comment="Updated At"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="vendor_id"/>
+        </constraint>
+    </table>
+</schema>

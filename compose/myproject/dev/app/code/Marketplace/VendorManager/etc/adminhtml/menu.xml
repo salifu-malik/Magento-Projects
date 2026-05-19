@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+
+    <menu>
+        <add id="Marketplace_VendorManager::add_vendor"
+             title="Add Vendor"
+             module="Marketplace_VendorManager"
+             sortOrder="20"
+             parent="Marketplace_VendorManager::marketplace"
+             action="vendor/index/create"
+             resource="Magento_Backend::content"/>
+
+        <add id="Marketplace_VendorManager::marketplace"
+             title="Marketplace"
+             module="Marketplace_VendorManager"
+             sortOrder="100"
+             resource="Magento_Backend::content"/>
+
+        <add id="Marketplace_VendorManager::vendors"
+             title="Vendors"
+             module="Marketplace_VendorManager"
+             sortOrder="10"
+             parent="Marketplace_VendorManager::marketplace"
+             action="vendor/index/index"
+             resource="Magento_Backend::content"/>
+
+    </menu>
+
+</config>
